@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="块级 作用域变量声明关键字let,const let,const只在块级作用域生效，const 不能再次赋值  函数参数 默认参数不定参数(…args)扩展参数  箭头函数增强对象类模块module循环与迭代器">
 <meta name="keywords" content="这是一个记录我的学习心得(主要是前端和java)和生活随想的个人博客，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/04/11/hello-world/index.html">
+<meta property="og:title" content="ES6新特性">
+<meta property="og:url" content="http://yoursite.com/2018/04/25/ES6新特性/index.html">
 <meta property="og:site_name" content="Junior&#39;s Note">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="块级 作用域变量声明关键字let,const let,const只在块级作用域生效，const 不能再次赋值  函数参数 默认参数不定参数(…args)扩展参数  箭头函数增强对象类模块module循环与迭代器">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-11T12:35:32.236Z">
+<meta property="og:updated_time" content="2018-04-25T13:00:54.165Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="ES6新特性">
+<meta name="twitter:description" content="块级 作用域变量声明关键字let,const let,const只在块级作用域生效，const 不能再次赋值  函数参数 默认参数不定参数(…args)扩展参数  箭头函数增强对象类模块module循环与迭代器">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/11/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/25/ES6新特性/"/>
 
 
 
 
 
-  <title>Hello World | Junior's Note</title>
+  <title>ES6新特性 | Junior's Note</title>
   
 
 
@@ -263,7 +263,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/11/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/25/ES6新特性/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Junior Xu">
@@ -280,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">ES6新特性</h1>
         
 
         <div class="post-meta">
@@ -292,8 +292,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-11T20:35:20+08:00">
-                2018-04-11
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-25T12:10:42+08:00">
+                2018-04-25
               </time>
             
 
@@ -310,7 +310,7 @@
 
           
           
-             <span id="/2018/04/11/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
+             <span id="/2018/04/25/ES6新特性/" class="leancloud_visitors" data-flag-title="ES6新特性">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -341,16 +341,13 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        <h4 id="块级-作用域变量声明关键字let-const"><a href="#块级-作用域变量声明关键字let-const" class="headerlink" title="块级 作用域变量声明关键字let,const"></a>块级 作用域变量声明关键字let,const</h4><blockquote>
+<p>let,const只在块级作用域生效，<br>const 不能再次赋值</p>
+</blockquote>
+<h4 id="函数参数"><a href="#函数参数" class="headerlink" title="函数参数"></a>函数参数</h4><blockquote>
+<p>默认参数<br>不定参数(…args)<br>扩展参数</p>
+</blockquote>
+<h4 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h4><h4 id="增强对象"><a href="#增强对象" class="headerlink" title="增强对象"></a>增强对象</h4><h4 id="类"><a href="#类" class="headerlink" title="类"></a>类</h4><h4 id="模块module"><a href="#模块module" class="headerlink" title="模块module"></a>模块module</h4><h4 id="循环与迭代器"><a href="#循环与迭代器" class="headerlink" title="循环与迭代器"></a>循环与迭代器</h4>
       
     </div>
     
@@ -374,8 +371,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/09/my-new-post/" rel="next" title="my new post">
-                <i class="fa fa-chevron-left"></i> my new post
+              <a href="/2018/04/16/java/" rel="next" title="java">
+                <i class="fa fa-chevron-left"></i> java
               </a>
             
           </div>
@@ -384,8 +381,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/04/11/Untitled/" rel="prev" title="更新博客">
-                更新博客 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/04/25/markdown语法/" rel="prev" title="markdown语法">
+                markdown语法 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -500,7 +497,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#块级-作用域变量声明关键字let-const"><span class="nav-number">1.</span> <span class="nav-text">块级 作用域变量声明关键字let,const</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#函数参数"><span class="nav-number">2.</span> <span class="nav-text">函数参数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#箭头函数"><span class="nav-number">3.</span> <span class="nav-text">箭头函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#增强对象"><span class="nav-number">4.</span> <span class="nav-text">增强对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#类"><span class="nav-number">5.</span> <span class="nav-text">类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#模块module"><span class="nav-number">6.</span> <span class="nav-text">模块module</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#循环与迭代器"><span class="nav-number">7.</span> <span class="nav-text">循环与迭代器</span></a></li></ol></div>
             
 
           </div>
